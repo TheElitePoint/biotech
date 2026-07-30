@@ -1,0 +1,26 @@
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Data / outputs
+data/
+output/
+outputs/
+
+# Claude / tooling working dirs
+.agents/
+.artifact-work/
+.review/
+.runtime-deps/
+.claude/
