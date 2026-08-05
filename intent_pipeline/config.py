@@ -43,6 +43,26 @@ NEWS_DOMAINS = [
     "globenewswire.com",
     "labiotech.eu",
     "biopharmadive.com",
+    # Press-release syndication / finance-news hosts. None of these are ever the
+    # subject company — but a ticker mention like "(Nasdaq: XYZ)" in the article
+    # body was enough to fool the domain-matches-content check into resolving
+    # the company as "Nasdaq" or "Yahoo" itself (caught in testing on a
+    # nasdaq.com-hosted Celldex/AC Immune press release).
+    "nasdaq.com",
+    "finance.yahoo.com",
+    "uk.sports.yahoo.com",
+    "morningstar.com",
+    "benzinga.com",
+    "streetinsider.com",
+    "marketwatch.com",
+    "seekingalpha.com",
+    "pharmabiz.com",
+    "pharmatimes.com",
+    "medindia.net",
+    "tmcnet.com",
+    "dutchnews.nl",
+    "manilatimes.net",
+    "pharmaphorum.com",
 ]
 
 # Applicant tracking systems. Unlike job boards, an ATS posting belongs to exactly one

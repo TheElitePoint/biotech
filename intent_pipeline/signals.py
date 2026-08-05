@@ -29,7 +29,8 @@ _DATE_PATTERNS = [
 # Corporate form is always noise. Descriptive suffixes are only noise when something
 # recognizable survives without them — "RQ Bio" must not become "RQ".
 _LEGAL_SUFFIX = re.compile(
-    r"[,\s]+(inc|llc|ltd|limited|corp|corporation|co|plc|gmbh|ab|sa|nv|bv|pte|pty)\.?$",
+    r"[,\s]+(inc|llc|ltd|limited|corp|corporation|co|plc|gmbh|ag|se|ab|a\.?s|sa|s\.a\.?|"
+    r"nv|bv|pte|pty|aps|oy|spa|srl|s\.r\.l\.?|kk|k\.k\.?|holdings?|group)\.?$",
     re.I,
 )
 _DESCRIPTIVE_SUFFIX = re.compile(
